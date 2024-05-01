@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="#" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Table</title>
+</head>
+
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="col-tableHeader checkbox"><input type="checkbox" name="selectAll"></th>
+                <th class="col-tableHeader">Full name/ Health check</th>
+                <th class="col-tableHeader">Code</th>
+                <th class="col-tableHeader">Expiration</th>
+                <th class="col-tableHeader">Status</th>
+                <th class="col-tableHeader">Department</th>
+                <th class="col-tableHeader">User status</th>
+                <th class="col-tableHeader">Job title</th>
+                <th class="col-tableHeader"><button class="resetBtn" title="Reset">&#x27f3</button></th>
+            </tr>
+        </thead>
+        <tbody id="tableData"> </tbody>
+    </table>
+
+
+    <div class="sticky-bottom-container">
+        <div id="paginationNav">
+
+            <button id="prevPageBtn" title="Prev">&lt; </button>
+            <span id="currentPage"></span>
+            <button id="nextPageBtn" title="Next"> &gt;</button>
+        </div>
+        <div id="goToPageContainer">
+            <button id="goToPageBtn">Jump to:</button>
+            <input type="number" id="pageNumberInput">
+        </div>
+        <div id="paginationControls">
+            Show : <button class="perPageBtn">15</button>
+            <button class="perPageBtn">20</button>
+            <button class="perPageBtn">25</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+.col-tableHeader {
+  font-family: sans-serif;
+  font-size: 1rem;
+  border-right: 1px solid black;
+  width: 10%;
+}
+
+.row {
+  height: 40px;
+  border-bottom: 1px solid black;
+  text-align: left;
+  padding-left: 25px;
+  width: 10%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.editBtn,
+.resetBtn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+  position: sticky;
+}
+
+.checkbox,
+.editing {
+  text-align: center;
+  padding-left: 0px;
+  position: sticky;
+}
+.checkbox {
+  left: 0;
+}
+.editing {
+  right: 0;
+}
+
+.greenBox {
+  background-color: rgb(88, 243, 88);
+  border-radius: 999px;
+  padding: 5px;
+}
+
+.redBox {
+  background-color: rgb(240, 12, 12);
+  padding: 5px;
+  border-radius: 999px;
+}
+
+.greyBox {
+  background-color: grey;
+  padding: 5px;
+  border-radius: 999px;
+}
+
+.greenBackground {
+  background-color: rgba(168, 226, 168, 0.787);
+}
+
+.perPageBtn {
+  bottom: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.perPageBtn.selected {
+  background-color: green;
+}
+
+.inner-row {
+  background-color: rgba(250, 248, 248, 0.906);
+}
+
+#paginationControls {
+  text-align: right;
+}
+
+#pageNumberInput {
+  -moz-appearance: textfield;
+  width: 20px;
+  height: auto;
+}
+
+#prevPageBtn,
+#nextPageBtn {
+  background-color: transparent;
+  border: none;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+#goToPageContainer {
+  bottom: 10px;
+  left: 50%;
+  text-align: center;
+}
+
+#pageNumberInput {
+  width: 25px;
+  height: 25px;
+  font-size: inherit;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+#goToPageBtn {
+  width: 75px;
+  height: 25px;
+
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: inherit;
+}
+
+.col-tableHeader {
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: 5;
+}
+
+.sticky-bottom-container {
+  justify-content: space-between;
+  display: flex;
+  position: sticky;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: 5;
+}
+
+/* -------------------------------------------------- */
+
+.modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.modal-content input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.arrowUp {
+  display: none;
+}
